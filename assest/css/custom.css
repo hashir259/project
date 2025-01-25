@@ -1,0 +1,135 @@
+:root{
+    --white: #FFFFFF;
+    --min: rgb(32, 191, 107) !important;
+    --secondary: rgba(32, 191, 107,0.2);
+    --primary: #F2F2F2;
+    --text: rgb(127, 127, 144);
+    --dark:  #37373f;
+    --black: #000000;
+    --box-shadow: 2px 2px 20px 20px rgba(64, 63, 63, 0.1);
+    --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --nav-font: "Inter", sans-serif;
+    --heading-font: "Inter Tight", serif;
+}
+/* general */
+li{
+    list-style-type: none;
+}
+.d-icon{
+    -webkit-text-stroke-width: 2px;
+    font-size: 10px;
+}
+.icon-list i{
+    color: var(--min);
+    font-size: 20px;
+}
+/* button */
+.btn{
+    font-size: 14px;
+    font-family: var(--default-font);
+    border: none;
+    outline: none;
+    box-shadow: none;
+    border-radius: 50px;
+    padding: 12px 22px;
+}
+.btn-danger{
+    background-color: var(--min);
+    color: var(--white);
+    width: fit-content;
+}
+.radius-0{
+    border-radius: 8px;
+}
+/* fonts */
+.main-heading{
+    font-size: 64px;
+    font-family: var(--heading-font);
+    font-weight: 700;
+}
+.sub-heading{
+    font-size: 48px;
+    font-family: var(--heading-font);
+}
+.small-heading{
+    font-size: 14px;
+    color: var(--text);
+    font-family: var(--default-font);
+}
+.title{
+    font-size: 28px;
+}
+.sub-title{
+    font-size: 24px;
+}
+.card-title,
+.text{
+    font-size: 20px;
+    font-family: var(--default-font);
+}
+.card-text{
+    font-size: 15px;
+}
+.text-main{
+    color: var(--min);
+}
+.text-color{
+    color: var(--text);
+}
+.stars i{
+    color: goldenrod;
+}
+/* forms */
+.textarea{
+    resize: none;
+}
+.input-form-control{
+    padding: 12px 22px;
+    outline: none;
+    border: none;
+}
+.input-form-control:focus,
+.input-form-control:hover{
+    box-shadow: none;
+    outline: none;
+    border: none;
+}
+/* background */
+.bg-secondry{
+    background-color: var(--primary);
+}
+.bg-main{
+    background-color: var(--min);
+}
+/* card */
+.card{
+    border: none;
+    outline: none;
+    box-shadow: none;
+    border-radius: 0;
+}
+/*  */
+@media (max-width: 1440px){}
+@media (max-width: 1200px){}
+@media (max-width: 991px){
+    .main-heading{
+        font-size: 44px;
+    }
+    .card-text {
+        font-size: 13px;
+    }
+    .card-title{
+        font-size: 15px;
+    }
+}
+@media (max-width: 500px){
+    .card-title{
+        font-size: 15px;
+    }
+    .main-heading{
+        font-size: 32px;
+    }
+    .sub-heading{
+        font-size: 20px;
+    }
+}
